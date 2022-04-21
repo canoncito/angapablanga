@@ -1,0 +1,1426 @@
+    /* Reset css */
+*
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* color de fondo al header de las paginas y que siga el menu*/
+    header
+    {
+     background-color: #010a1a;
+     position:sticky;
+     top: 0;
+     
+    }
+   
+   /* GRID AL NAVBAR MOBILE */
+.container
+    {
+        height: 50px;
+        display: grid;
+        grid-template-areas: 
+        "logo label-menu "
+        "none nav "
+        ;
+    }
+    /* Tamaño del logo para la navegacion */
+    
+.logo
+   {
+       position: relative;
+       width: 150px;
+       top: 10px;
+       left: 20px;
+       grid-area: logo;
+   }  
+/* MENU DESPLEGABLE MOBILE */
+
+.navigation-page li
+    {
+        list-style: none;
+    }
+    /* BORDES Y ESPACIADO ENTRE LINEAS DEL MENU */
+.navigation-page li a 
+    {
+        display: block;
+        text-decoration: none;
+        text-align: right;
+        color: whitesmoke;
+        line-height: 50px;
+        margin-right: 10px; 
+        
+    }
+        
+.label-menu 
+    {
+        font-size: 26px;
+        line-height: 50px; 
+        text-align: end;
+        margin-right: 5px;
+        grid-area: label-menu;
+        
+    }
+    
+    /* DOY COLOR Y DISPLAY BLOCK AL ICONO DE MENU MOBILE */
+.label-menu 
+    {
+        display: block;
+        color: white;
+        
+    }
+
+        /* ARMO MENU PARA MOBILE */
+    nav 
+    {
+        width: 100%;
+        display: none;
+        background-color: #010a1a;
+        grid-area: nav;
+    }
+    nav li 
+    {
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;    
+    }
+        /* Ocultar y Mostrar Menu */
+    #toggle:checked + nav 
+    {
+        animation-name: efecto-menu;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.1s;
+        animation-delay: 0s;
+        display: block;
+    }
+    #toggle 
+    {
+        display: none;
+    }
+
+
+    /* Estilos para h1   VER SI EN MOBILE TAMBIEN TIENEN QUE IR ASI*/ 
+    .title
+    {
+        font-family: 'Oswald',sans-serif;
+        font-weight: 800;
+        color: #fff;
+        font-size: 100px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    /*Home*/
+
+    /* Imagen de fondo para home */
+    .home-page-img
+    {
+        width: 100%;
+        height: 350px;
+        background-image: url(../public/fotoprincipal.jpg);         
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;  
+    } 
+
+    .text-center-img
+    {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        padding-top: 5px;
+        text-align: center;
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+
+
+    .column-text-image p
+    {
+        font-family: 'Roboto Mono',sans-serif;
+        font-weight: 200;
+    }
+
+    .column-text-image
+    {
+    display: none;
+    }
+    /* flexbox de contenidos dentro de la imagen */
+    .contenido-foto-home 
+    {
+        color: #fff;   
+    }
+
+    /* Fondo y padding de texto abajo de imagen */
+    .home-text
+    {
+        background-color: #696261;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .home-text p
+    {
+        font-family: 'Work Sans',sans-serif;
+        font-weight:  100;
+        font-size: 1rem; /*1.5 rem escritorio8*/
+        text-align: center;
+    }
+
+    /* estilo a tabla  */
+    .table-home
+    {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .table-home td, th
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .table-home th
+    {
+        background-color: #35698f;
+        color: #010a1a;
+    }
+
+    /*Blog*/
+
+    .backgroundcolor-blog 
+    {
+        background-color: #696261;
+    }
+
+    /* BLOG */
+
+        /* Acomodo imagenes ,textos y comentarios del blog */
+
+    .img-text-blog img
+    {
+        width: 100%;
+    }
+        
+    .border-text-blog
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+        
+    .border-text-blog p
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;       
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Open-Sans',sans-serif;
+    }
+    .column-blog
+    {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .img-text-blog
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* comentario de blog */
+    .escribir-comentario
+    {
+    width: 80%;
+    }
+
+    .comentario-blog span
+    {
+        margin-left: 1rem;
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: 700;
+        color: #010a1a;
+    }
+    .escribir-comentario-blog textarea
+    {
+        margin-top: 10px;
+        resize: none;
+    }
+    .escribir-comentario-blog
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+    .btn-comentario
+    {
+        width: 150px;
+        height: 50px;
+        margin-top: 1rem;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    /*Portfolio*/
+  
+/* PORTFOLIO MOBILE  */
+.backgroundcolor-portfolio h1
+    {
+        font-size: 40px;
+    }
+/* Acomodo imagenes para que tengan una separacion entre todas */
+.column-img-portfolio img
+    {
+        width: 100%;
+       
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+.column-img-portfolio
+    {
+        display: flex;
+        flex-direction: column;
+    }
+.img-abajo-t
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;    
+    }
+
+.backgroundcolor-portfolio
+    {
+        background-color: #696261;
+    }  
+
+/* SHOP NUEVO MOBILE */
+
+/* Fondo de shop y acomodo el titulo */
+.backgroundcolor-shop
+    {
+        background-color: #f0c44a; 
+    }
+.title-shop
+    {
+        font-family: 'Oswald',sans-serif;
+        font-weight: 800;
+        color: #010a1a;
+        font-size: 50px;
+        padding-top: 10px;
+        text-align: center;
+    }
+.filter-product
+{
+         width: 80%;
+        background-color: #37a69c;
+        border-radius: 10px;
+}
+ /* Oculto menu de filtros y saco puntos en el menu de filtro*/
+.filter-product ul
+    {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        list-style: none;  
+    }
+
+/* Grid para acomodar las cards del shop y boton de filtro */
+.product-wrapper
+    {
+        display: grid;
+        grid-template:
+        "filter-product filter-product" 
+        "container-product container-product"
+        ;
+        justify-items: center;
+    }
+/* grid area al div de filtro*/
+.filter-product
+    {
+        margin-top: 10px;
+        grid-area: filter-product;
+       text-align: center;
+    }
+/* Estilo de boton de filtros */
+.filter-product label
+    {
+        border-radius: 5px;
+        background-color: #de093e;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+.filter-product ul li
+    {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #d14d21;
+        cursor: pointer;
+        width: 150px;
+        border-radius: 10px;
+    }
+
+/* Acomodo imagenes para mobile dentro del card*/
+.img-product img
+    {
+        width: 100%;
+        border-radius: 5px;   
+    }
+.container-product
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        grid-area: container-product;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+
+    
+/* Estilo a la card del producto */
+.card-product
+    {
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        width: 100px;
+        border: solid 2px black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 10px 5px 0 #262522;
+        background-color: whitesmoke;
+    }
+.description-product
+    {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+.description-product p
+    {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: black;
+    }
+ .card-container
+    {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+.btn-comprar button
+    {
+        border-radius: 5px;
+        background-color: #37a69c;
+    }
+
+
+    /*Contact*/
+
+.backgroundcolor-contact
+    {
+        background-color: #f0c44a;
+    }
+/* Titulo para h1 de contacto */
+.title-contact
+    {
+        font-family: 'Oswald',sans-serif;
+        font-weight: 800;
+        color: #010a1a;
+        font-size: 50px;
+        padding-top: 10px;
+        text-align: center;   
+    }
+/* estilo para mapa estirado en toda la pantalla */
+.container-map-form iframe
+    {
+        padding-top: 20px;
+        width: 100%;
+    }
+/* Estilo tipo tarjeta para contacto */
+.row-contact
+    {
+        background-color: #25946f;
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+/* estilo para formulario y acomodarlo al medio*/
+.row-contact form
+    {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: start;    
+    }
+    .container-contact
+    {
+        padding-bottom: 10px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.form-control
+    {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+.form-control-textarea
+    {
+        resize: none;
+        padding-bottom: 30px;
+        padding-right:40%;
+    }
+
+.btn-contact
+    {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+.boton-contacto
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #de093e;
+        color: whitesmoke;
+    }
+/* FOOTER MOBILE*/
+.row
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+/* a cada columna le doy el 25% para armar 4 columnas del total del width */
+.columna-footer h3
+    {
+       border-bottom: solid 1px white;   
+    }
+
+.logo-footer
+    {
+        margin-top: 1rem;
+        width: 250px; 
+    }
+footer ul li
+    {
+        margin-bottom: 10px;
+    }
+
+footer
+    {
+        background-color: #010a1a;
+        color: whitesmoke;
+        padding-top: 10px;  
+    }
+
+/* Acomodo de iconos de redes centrados */
+.redes
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        font-size: 30px;
+        
+    }
+
+.redes li
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+.redes a
+    {
+        color: whitesmoke;
+    
+        
+    }
+
+
+/* Navegacion del footer con animacion */
+footer ul
+    {
+        list-style: none;
+        margin-top: 10px;
+        text-align: center; 
+    }
+footer h3
+    {
+        text-align: center;
+        
+    }  
+
+.nav-footer li a
+    {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+.nav-footer li a:hover
+    {
+        text-decoration: underline;
+    }
+
+/* Barra footer con copy */
+.bar-footer
+    {
+        
+        background-color: black;
+        text-align: center;  
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+@media screen and (min-width: 480px)
+{
+    /* PORTFOLIO */
+/* Acomodo heigth de imagenes a responsive */
+    .img-principal-portfolio img
+        {
+            height: auto;
+        } 
+
+    /* SHOP */
+/* Acomodo cards de productos */
+    .container-product
+    {
+        justify-content: flex-start;
+        margin-left: 80px;
+    }
+}
+@media  screen and (min-width:600px)
+{
+    
+    /* Acomodo menu y logo a 600px */
+    .logo
+    {
+        position: relative;
+        width: 200px;
+        left: 0;
+    }
+    
+    .container
+    {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: auto;  
+    }
+
+    /* NAVBAR */
+    .label-menu
+    {
+      display: none;
+    }
+     nav
+    {
+      display: block;
+     
+    }
+    .navigation-page
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+    .navigation-page li
+    {
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    /*TITULO IMAGEN CENTRADA  */
+    .text-center-img
+    {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+  /* divido en dos el contenido de los dos parrafos inferiores */
+  .column-text-image
+  {
+      height: 250px;
+      display: inline;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+  }
+  .column-der-img
+  {
+      margin-top: 30px;
+  }
+  
+  /* BLOG */
+
+      /* Acomodo imagenes ,textos y comentarios del blog */
+
+  .img-text-blog img
+  {
+      width: 80%;
+  }
+
+  .border-text-blog
+  {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-top: solid 1px black;
+      border-bottom: solid 1px black;
+  }
+
+  .border-text-blog p
+  {
+      width: 600px;
+      margin-top: 20px;
+      margin-bottom: 20px;  
+      padding-left: 40px;
+      padding-right: 40px;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Open-Sans',sans-serif;
+  }
+  .column-blog
+  {
+      margin-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .img-text-blog
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  /* comentario de blog */
+  .escribir-comentario
+  {
+  width: auto;
+  }
+  .comentario-blog span
+  {
+      margin-left: 1rem;
+      font-family: 'Ubuntu',sans-serif;
+      font-weight: 700;
+      color: #010a1a;
+  }
+  .escribir-comentario-blog textarea
+  {
+      margin-top: 10px;
+      resize: none;
+  }
+  .escribir-comentario-blog
+  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  }
+  .btn-comentario
+  {
+      width: 150px;
+      height: 50px;
+      margin-top: 1rem;
+      background-color: transparent;
+      font-size: 1rem;
+  }
+
+  /* PORTFOLIO */
+ 
+  .column-img-portfolio
+  {
+      align-items: center;
+      
+  } 
+/* Le doy ancho a las imagenes de abajo las que estan juntas para que me ocupen mismo espacio a la de arriba*/
+  .img-abajo-t
+  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+       width: 270px;
+  }
+
+  .backgroundcolor-portfolio
+  {
+      background-color: #696261;
+  } 
+
+/* SHOP */
+/* Acomodo cards de productos */
+    .container-product
+    {
+        justify-content: flex-start;
+        margin-left: 55px;
+    }
+    
+  /* CONTACTO */
+   /*Acomodo forumlario de consultas  */
+   .form-control
+    {
+        margin-top: 10px;
+        padding-right: 50%;
+    }
+
+    .form-control-textarea
+        {
+            resize: none;
+            padding-bottom: 30px;
+            padding-right:50%;
+        }
+
+}
+
+/* Media query a partir de 740px */
+
+@media screen and (min-width:700px) 
+{
+
+    /* NUEVO MENU PARA PAGINAS SIN MOBILE */
+      .logo
+      {
+          position: absolute;
+          width: 200px;
+          top: 20px;
+      }
+      header 
+      {
+          padding: 1rem;
+      }
+      
+
+      /* MENU NAVBAR */
+      .label-menu
+      {
+        display: none;
+      }
+       nav
+      {
+        display: block;
+       
+      }
+      .navigation-page
+      {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+         
+      }
+
+      .container{
+          display: inline;
+      }
+
+      .navigation-page li a
+      {
+          margin-right:30px;
+      }
+      .navigation-page li
+      {
+          border-bottom: none;
+          border-left: none;
+          border-right: none;
+      }
+
+      /*TITULO IMAGEN CENTRADA  */
+      .text-center-img
+      {
+          font-family: 'Oswald', sans-serif;
+          font-weight: 500;
+          padding-top: 0px;
+          text-align: center;
+          font-size: 60px;
+          text-transform: uppercase;
+      }
+    /* divido en dos el contenido de los dos parrafos inferiores */
+    .column-text-image
+    {
+        height: 250px;
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .column-der-img
+    {
+        margin-top: 30px;
+    }
+    
+    /* BLOG */
+
+        /* Acomodo imagenes ,textos y comentarios del blog */
+
+    .img-text-blog img
+    {
+        width: 80%;
+    }
+
+    .border-text-blog
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+
+    .border-text-blog p
+    {
+        width: 600px;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Open-Sans',sans-serif;
+    }
+    .column-blog
+    {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-text-blog
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+    /* comentario de blog */
+    .escribir-comentario
+    {
+    width: auto;
+    }
+    .comentario-blog span
+    {
+        margin-left: 1rem;
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: 700;
+        color: #010a1a;
+    }
+    .escribir-comentario-blog textarea
+    {
+        margin-top: 10px;
+        resize: none;
+    }
+    .escribir-comentario-blog
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    }
+    .btn-comentario
+    {
+        width: 150px;
+        height: 50px;
+        margin-top: 1rem;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    /* FOOTER  */
+    .row
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    /* a cada columna le doy el 25% para armar 4 columnas del total del width */
+    .columna-footer
+    {
+        width: 25%;    
+    }
+    .columna-footer h3
+    {
+       border-bottom: none;   
+    }
+
+    .logo-footer
+    {
+        margin-top: 3rem;
+        margin-left: 5px;
+        width: 200px; 
+    }
+    footer ul li
+    {
+        margin-bottom: 10px;
+    }
+
+    footer
+    {
+        background-color: #010a1a;
+        color: whitesmoke;
+        padding-top: 10px;  
+    }
+
+    /* Acomodo de iconos de redes centrados */
+    .redes
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        font-size: 30px;
+        margin-top: 3rem;
+        
+    }
+
+    .redes li
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .redes a
+    {
+        color: whitesmoke;
+    
+        
+    }
+    
+    .contact-column
+    {
+        margin-top: 2rem;
+    }
+    /* Navegacion del footer con animacion */
+    footer ul
+    {
+        list-style: none;
+        margin-top: 10px;
+        text-align: center; 
+    }
+    footer h3
+    {
+        text-align: center; 
+    }  
+
+    .nav-footer li a
+    {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .nav-footer li a:hover
+    {
+        text-decoration: underline;
+    }
+
+    /* Barra footer con copy */
+    .bar-footer
+    {
+        
+        background-color: black;
+        text-align: center;  
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* Media query a partir de 1024px */
+
+@media screen and (min-width:1024px) 
+{
+
+    /* NUEVO MENU PARA PAGINAS SIN MOBILE */
+      .logo
+      {
+          position: absolute;
+          width: 250px;
+          top:1;
+      }
+      .container 
+      {
+          padding: 2rem;
+         
+      }
+      
+
+      /*MENU ESCRITORIO */
+      .label-menu
+      {
+          display: none;
+      }
+       nav
+      {
+        display: block;
+       
+    }
+      .navigation-page
+      {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+         
+      }
+
+      .container{
+          display: inline;
+      }
+
+      .navigation-page li a
+      {
+          margin-right:50px;
+          border-bottom: none;
+      }
+      
+      
+    
+    
+    /* divido en dos el contenido de los dos parrafos inferiores */
+    .column-text-image
+    {
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .column-izq-img, .column-der-img
+    {
+        width: 550px;
+        margin-top: 50px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+
+
+   
+    /* BLOG */
+
+        /* Acomodo imagenes ,textos y comentarios del blog */
+
+    .img-text-blog img
+    {
+        width: 80%;
+    }
+
+    .border-text-blog
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+
+    .border-text-blog p
+    {
+        width: 600px;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Open-Sans',sans-serif;
+    }
+    .column-blog
+    {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-text-blog
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* comentario de blog */
+    .escribir-comentario
+    {
+    width: auto;
+    }
+    .comentario-blog span
+    {
+        margin-left: 1rem;
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: 700;
+        color: #010a1a;
+    }
+    .escribir-comentario-blog textarea
+    {
+        margin-top: 10px;
+        resize: none;
+    }
+    .escribir-comentario-blog
+    {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    }
+    .btn-comentario
+    {
+        width: 150px;
+        height: 50px;
+        margin-top: 1rem;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    /* PORTFOLIO */
+    .backgroundcolor-portfolio
+        {
+            background-color: #696261;
+        } 
+    .img-principal-portfolio
+        {
+            
+            height: 350px;
+        }
+    .column-img-portfolio
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        /* Le doy ancho a las imagenes de abajo las que estan juntas para que me ocupen mismo espacio a la de arriba*/
+  .img-abajo-t
+        {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+             width: 45%; 
+        }
+       
+    /* SHOP */
+    /* Modifico grid para poner filtros de busqueda de costado y el shop por la derecha */
+    .product-wrapper
+        {
+            grid-template:
+        "filter-product container-product" 
+        ;
+        justify-items: start;
+        justify-content: start;
+        }
+    .filter-product
+        {
+            margin-bottom: 10px;
+            margin-left: 10px;
+            width: 200px;
+           
+        }
+    /* Acomodo botones de filtros de busqueda y le doy estilos de boton*/
+    .filter-product ul li
+        {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #d14d21;
+            cursor: pointer;
+            width: 70%;
+            border-radius: 10px;
+        }
+
+      /* Creo grid de productos para 2 columnas */
+    .container-product
+        {
+            display: grid;
+            grid-template: 
+            "container-product container-product"
+            ;     
+        }
+    .card-container
+        {
+            grid-area: container-product;
+            flex-direction: row;
+            flex-wrap: nowrap;  
+        }
+    .card-product
+        {
+            width: 250px;
+        }
+    .description-product
+        {
+           margin-left: 5px;
+        }
+     /* FOOTER */
+     .row
+     {
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     /* a cada columna le doy el 25% para armar 4 columnas del total del width */
+     .columna-footer
+     {
+         width: 25%;    
+     }
+     .columna-footer h3
+     {
+        border-bottom: none;   
+     }
+ 
+     .logo-footer
+     {
+         margin-top: 3rem;
+         margin-left: 1rem;
+         width: 300px; 
+     }
+     footer ul li
+     {
+         margin-bottom: 10px;
+     }
+ 
+     footer
+     {
+         background-color: #010a1a;
+         color: whitesmoke;
+         padding-top: 10px;  
+     }
+ 
+     /* Acomodo de iconos de redes centrados */
+     .redes
+     {
+         display: flex;
+         flex-direction: row;
+         justify-content: center; 
+         font-size: 30px;
+         margin-top: 3rem;
+         
+     }
+ 
+     .redes li
+     {
+         margin-left: 10px;
+         margin-right: 10px;
+     }
+ 
+     .redes a
+     {
+         color: whitesmoke;
+     
+         
+     }
+ 
+     .contact-column
+     {
+         margin-top: 2rem;
+     }
+     /* Navegacion del footer con animacion */
+     footer ul
+     {
+         list-style: none;
+         margin-top: 10px;
+         text-align: center; 
+     }
+     footer h3
+     {
+         text-align: center; 
+     }  
+ 
+     .nav-footer li a
+     {
+         text-decoration: none;
+         color: whitesmoke;
+     }
+ 
+     .nav-footer li a:hover
+     {
+         text-decoration: underline;
+     }
+ 
+     /* Barra footer con copy */
+     .bar-footer
+     {
+         
+         background-color: black;
+         text-align: center;  
+         padding-right: 1rem;
+         padding-left: 1rem;
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+     }
+ 
+}
+
+/* HOVERS */
+/* Animaciones a menues desktop*/
+.navigation-page a:hover
+{
+    border-bottom: solid 1px whitesmoke;
+}
+
+/* KEYFRAMES */
+/* Efecto transicion menu mobile */
+@keyframes efecto-menu {
+    0%{transform: translateX(100%);}
+    25%{transform: translateX(75%);}
+    50%{transform: translateX(50%);}
+    75%{transform: translateX(25%);}
+    100%{transform: translateX(0%);}
+}
