@@ -448,7 +448,11 @@
 
 
     /*Contact*/
-
+    /* Oculto titulo con animacion en mobile para solo mostarlo en escritorio */
+.bannerpagecontact-1024
+{
+    display: none;
+}
 .backgroundcolor-contact
     {
         background-color: #f0c44a;
@@ -1259,6 +1263,7 @@ footer h3
         }
        
     /* SHOP */
+
     /* Modifico grid para poner filtros de busqueda de costado y el shop por la derecha */
     .product-wrapper
         {
@@ -1316,13 +1321,17 @@ footer h3
 
         /* CCONTACTO */
 
+        .container-map-form
+        {
+            height: 400px;
+        }
         /* pongo formulario dentro del mapa de google map */
-        .row-contact
+        .container-contact
         {
             position: relative;
             bottom: 250px;
            
-            left: 50%;
+            left: 20%;
         }
         .row-contact form
     {
@@ -1340,37 +1349,55 @@ footer h3
         margin-left: auto;
         margin-right: auto;
     }
-.form-control
-    {
-        margin-top: 10px;
-        width: 90%;
-    }
+    .form-control
+        {
+            margin-top: 10px;
+            width: 90%;
+        }
 
-.form-control-textarea
-    {
-        resize: none;
-        padding-bottom: 30px;
-        padding-right:40%;
-    }
+    .form-control-textarea
+        {
+            resize: none;
+            padding-bottom: 30px;
+            padding-right:40%;
+        }
 
-.btn-contact
-    {
-        margin-top: 1rem;
-        text-align: center;
-    }
+    .btn-contact
+        {
+            margin-top: 1rem;
+            text-align: center;
+        }
 
-.boton-contacto
-    {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: none;
-        border-radius: 20px;
-        background-color: #de093e;
-        color: whitesmoke;
-    }
+    .boton-contacto
+        {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #de093e;
+            color: whitesmoke;
+        }
 
+     .bannerpagecontact-1024
+     {
+       
+        display: block;
+        width: 650px;
+       
+     } 
+     .bannerpagecontact-1024 p
+     {
+         font-family: 'Vazirmatn', sans-serif;
+        font-size: 80px;
+        animation-name: baner-contact;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        
+     }
      /* FOOTER */
      .row
      {
@@ -1486,4 +1513,11 @@ footer h3
     50%{transform: translateX(50%);}
     75%{transform: translateX(25%);}
     100%{transform: translateX(0%);}
+}
+/* Transicion de baner contacto */
+@keyframes baner-contact {
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(25%);}
+    50%{transform: translateX(50%);}
+     
 }
