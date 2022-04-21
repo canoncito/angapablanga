@@ -114,6 +114,7 @@
 
     /*Home*/
 
+
     /* Imagen de fondo para home */
     .home-page-img
     {
@@ -159,7 +160,11 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
+    /* Le doy tamaño a primera letra del texto en home */
+    .home-text b
+    {
+        font-size: 50px;
+    }
     .home-text p
     {
         font-family: 'Work Sans',sans-serif;
