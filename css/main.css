@@ -12,8 +12,8 @@
     {
      background-color: #010a1a;
      position:sticky;
-     top: 0;
-     
+     top: 0; 
+     z-index: 1;
     }
    
    /* GRID AL NAVBAR MOBILE */
@@ -1313,6 +1313,64 @@ footer h3
         {
            margin-left: 5px;
         }
+
+        /* CCONTACTO */
+
+        /* pongo formulario dentro del mapa de google map */
+        .row-contact
+        {
+            position: relative;
+            bottom: 250px;
+           
+            left: 50%;
+        }
+        .row-contact form
+    {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: start;    
+    }
+    .container-contact
+    {
+        padding-bottom: 10px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.form-control
+    {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+.form-control-textarea
+    {
+        resize: none;
+        padding-bottom: 30px;
+        padding-right:40%;
+    }
+
+.btn-contact
+    {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+.boton-contacto
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #de093e;
+        color: whitesmoke;
+    }
+
      /* FOOTER */
      .row
      {
