@@ -17,7 +17,7 @@
     }
    
    /* GRID AL NAVBAR MOBILE */
-.container
+/* .container
     {
         height: 50px;
         display: grid;
@@ -25,9 +25,15 @@
         "logo label-menu "
         "none nav "
         ;
-    }
+    } */
     /* Tamaño del logo para la navegacion */
-    
+
+
+    /* Modifico el navbar de boostrap */
+   #navbarNav
+   {
+       justify-content: flex-end;
+   }
 .logo
    {
        position: relative;
