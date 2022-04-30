@@ -10,29 +10,18 @@
     /* color de fondo al header de las paginas y que siga el menu*/
     header
     {
-     background-color: #010a1a;
-     position:sticky;
-     top: 0; 
-     z-index: 1;
+     /* background-color: #010a1a; */
+     background-color: white;
     }
-   
-   /* GRID AL NAVBAR MOBILE */
-/* .container
-    {
-        height: 50px;
-        display: grid;
-        grid-template-areas: 
-        "logo label-menu "
-        "none nav "
-        ;
-    } */
-    /* Tamaño del logo para la navegacion */
-
-
     /* Modifico el navbar de boostrap */
    #navbarNav
    {
        justify-content: flex-end;
+   }
+   .navbar
+   {
+    position:sticky;
+     top: 0; 
    }
 .logo
    {
@@ -62,7 +51,7 @@
         
 .label-menu 
     {
-        font-size: 26px;
+        font-size: 24px;
         line-height: 50px; 
         text-align: end;
         margin-right: 5px;
@@ -849,12 +838,7 @@ footer h3
           width: 200px;
           top: 20px;
       }
-      header 
-      {
-          padding: 1rem;
-      }
       
-
       /* MENU NAVBAR */
       .label-menu
       {
@@ -1101,8 +1085,10 @@ footer h3
       .logo
       {
           position: absolute;
-          width: 250px;
-          top:1;
+          width: 230px;
+          top:0;
+          margin-top: 3px;
+          margin-left: 40px; 
       }
       .container 
       {
