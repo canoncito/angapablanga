@@ -32,13 +32,13 @@
        left: 20px;
        grid-area: logo;
    }  
-/* MENU DESPLEGABLE MOBILE */
+/* MENU DESPLEGABLE MOBILE 
 
 .navigation-page li
     {
         list-style: none;
     }
-    /* BORDES Y ESPACIADO ENTRE LINEAS DEL MENU */
+    /* BORDES Y ESPACIADO ENTRE LINEAS DEL MENU 
 .navigation-page li a 
     {
         display: block;
@@ -49,17 +49,7 @@
         margin-right: 10px; 
         
     }
-        
-.label-menu 
-    {
-        font-size: 24px;
-        line-height: 50px; 
-        text-align: end;
-        margin-right: 5px;
-        grid-area: label-menu;
-        
-    }
-    
+    */
     /* DOY COLOR Y DISPLAY BLOCK AL ICONO DE MENU MOBILE */
 .label-menu 
     {
@@ -67,37 +57,6 @@
         color: white;
         
     }
-
-        /* ARMO MENU PARA MOBILE COMENTO TODO ESTO DE MENU PARA QUE NO ME GENERE CONFLICTOS
-    nav 
-    {
-        width: 100%;
-        display: none;
-        background-color: #010a1a;
-        grid-area: nav;
-    }
-    nav li 
-    {
-        border-right: 2px solid white;
-        border-bottom: 2px solid white;
-        border-left: 2px solid white;    
-    }
-     */
-        /* Ocultar y Mostrar Menu */
-    #toggle:checked + nav 
-    {
-        animation-name: efecto-menu;
-        animation-timing-function: ease-in-out;
-        animation-duration: 0.1s;
-        animation-delay: 0s;
-        display: block;
-    }
-    #toggle 
-    {
-        display: none;
-    }
-
-
     /* Estilos para h1   VER SI EN MOBILE TAMBIEN TIENEN QUE IR ASI*/ 
     .title
     {
@@ -153,7 +112,7 @@
     /* Fondo y padding de texto abajo de imagen */
     .home-text
     {
-        background-color: #696261;
+        /* background-color: #696261; */
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -166,18 +125,24 @@
     {
         font-family: 'Work Sans',sans-serif;
         font-weight:  100;
-        font-size: 1rem; /*1.5 rem escritorio8*/
+        font-size: 1rem;
         text-align: center;
     }
 
     /* estilo a tabla  */
     .table
     {
-        width: 500px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        background-color: #5b84ba;
     }
+    .image-text-objetivo
+    {
+        width: 100%;
+    }
+   
     /*Blog*/
 
     .backgroundcolor-blog 
@@ -510,7 +475,7 @@
         color: whitesmoke;
     }
 /* FOOTER MOBILE*/
-.row
+.row-footer
     {
         display: flex;
         flex-direction: column;
@@ -958,7 +923,7 @@ footer h3
     }
 
     /* FOOTER  */
-    .row
+    .row-footer
     {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1129,9 +1094,23 @@ footer h3
         margin-right: 60px;
     }
 
-
-
-   
+    .table
+    {
+        width: 70%;
+    }
+    .row
+    {
+        align-items: flex-start;
+    }
+    .container-img
+    {
+       
+       margin-top: 20px;
+    }
+    .separar-containers
+    {
+        margin-top: 50px;
+    }
     /* BLOG */
 
         /* Acomodo imagenes ,textos y comentarios del blog */
@@ -1374,7 +1353,7 @@ footer h3
         
      }
      /* FOOTER */
-     .row
+     .row-footer
      {
          flex-direction: row;
          flex-wrap: wrap;
