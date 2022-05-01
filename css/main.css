@@ -218,7 +218,7 @@
         font-size: 40px;
     }
 /* Acomodo imagenes para que tengan una separacion entre todas */
-.column-img-portfolio img
+/* .column-img-portfolio img
     {
         width: 100%;
        
@@ -241,8 +241,11 @@
 .backgroundcolor-portfolio
     {
         background-color: #696261;
-    }  
-
+    }   */
+.portfolio-container
+{
+    padding-bottom: 32px;
+}
 /* SHOP NUEVO MOBILE */
 
 /* Fondo de shop y acomodo el titulo */
@@ -1098,33 +1101,13 @@ footer h3
     }
 
     /* PORTFOLIO */
-    .backgroundcolor-portfolio
-        {
-            background-color: #696261;
-        } 
-    .img-principal-portfolio
-        {
-            
-            height: 350px;
-        }
-    .column-img-portfolio
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
-        /* Le doy ancho a las imagenes de abajo las que estan juntas para que me ocupen mismo espacio a la de arriba*/
-  .img-abajo-t
-        {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-             width: 45%; 
-        }
-       
+    .container-portfolio
+    {
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    }
     /* SHOP */
 
     /* Modifico grid para poner filtros de busqueda de costado y el shop por la derecha */
