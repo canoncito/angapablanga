@@ -24,6 +24,10 @@
     top: 0;
     background-color: #234066;
    }
+   .navbar-nav
+   {
+       align-items: flex-end;
+   }
 .logo
    {
        position: relative;
@@ -1009,6 +1013,10 @@ footer h3
        margin-top: 20px;
     }
     .separar-containers
+    {
+        margin-top: 50px;
+    }
+    .table
     {
         margin-top: 50px;
     }
