@@ -28,8 +28,9 @@
    {
        position: relative;
        width: 150px;
-       top: 10px;
-       left: 20px;
+       margin-left: 40px;
+       padding-top: 5px;
+       padding-bottom: 5px;
        grid-area: logo;
    }  
     /* Estilos para h1   VER SI EN MOBILE TAMBIEN TIENEN QUE IR ASI*/ 
@@ -573,7 +574,9 @@ footer h3
     {
         position: relative;
         width: 200px;
-        left: 0;
+        margin-left: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     
     .container
@@ -750,7 +753,9 @@ footer h3
       {
           position: relative;
           width: 200px;
-          top: 20px;
+          margin-left: 40px;
+          padding-top: 5px;
+          padding-bottom: 5px;
       }
       
       /*TITULO IMAGEN CENTRADA  */
