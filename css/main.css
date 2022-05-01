@@ -139,74 +139,7 @@
 
         /* Acomodo imagenes ,textos y comentarios del blog */
 
-    .img-text-blog img
-    {
-        width: 100%;
-    }
-        
-    .border-text-blog
-    {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-        
-    .border-text-blog p
-    {
-        margin-top: 20px;
-        margin-bottom: 20px;       
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Hind Siliguri','Open-Sans',sans-serif;
-    }
-    .column-blog
-    {
-        margin-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-        
-    .img-text-blog
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* comentario de blog */
-    .escribir-comentario
-    {
-    width: 80%;
-    }
-
-    .comentario-blog span
-    {
-        margin-left: 1rem;
-        font-family: 'Ubuntu',sans-serif;
-        font-weight: 700;
-        color: #010a1a;
-    }
-    .escribir-comentario-blog textarea
-    {
-        margin-top: 10px;
-        resize: none;
-    }
-    .escribir-comentario-blog
-    {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    }
-    .btn-comentario
-    {
-        width: 150px;
-        height: 50px;
-        margin-top: 1rem;
-        background-color: transparent;
-        font-size: 1rem;
-    }
-
+    
     /*Portfolio*/
   
 /* PORTFOLIO MOBILE  */
@@ -601,80 +534,7 @@ footer h3
     }
   /* BLOG */
 
-      /* Acomodo imagenes ,textos y comentarios del blog */
-
-  .img-text-blog img
-  {
-      width: 80%;
-  }
-
-  .border-text-blog
-  {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-top: solid 1px black;
-      border-bottom: solid 1px black;
-  }
-
-  .border-text-blog p
-  {
-      width: 600px;
-      margin-top: 20px;
-      margin-bottom: 20px;  
-      padding-left: 40px;
-      padding-right: 40px;
-      text-align: center;
-      font-size: 40px;
-      font-family: 'Hind Siliguri','Open-Sans',sans-serif;
-  }
-  .column-blog
-  {
-      margin-top: 50px;
-      padding-bottom: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .img-text-blog
-  {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  /* comentario de blog */
-  .escribir-comentario
-  {
-  width: auto;
-  }
-  .comentario-blog span
-  {
-      margin-left: 1rem;
-      font-family: 'Ubuntu',sans-serif;
-      font-weight: 700;
-      color: #010a1a;
-  }
-  .escribir-comentario-blog textarea
-  {
-      margin-top: 10px;
-      resize: none;
-  }
-  .escribir-comentario-blog
-  {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  }
-  .btn-comentario
-  {
-      width: 150px;
-      height: 50px;
-      margin-top: 1rem;
-      background-color: transparent;
-      font-size: 1rem;
-  }
-
+  
   /* PORTFOLIO */
  
   .column-img-portfolio
@@ -1049,11 +909,6 @@ footer h3
        scroll-behavior: initial;
    }
 
-    /* Coloco texto al lado de las imagenes */
-    /* .contenedor-blog
-    {
-        display: relative;
-    } */
     /* PORTFOLIO */
     .container-portfolio
     {
