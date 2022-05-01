@@ -32,31 +32,6 @@
        left: 20px;
        grid-area: logo;
    }  
-/* MENU DESPLEGABLE MOBILE 
-
-.navigation-page li
-    {
-        list-style: none;
-    }
-    /* BORDES Y ESPACIADO ENTRE LINEAS DEL MENU 
-.navigation-page li a 
-    {
-        display: block;
-        text-decoration: none;
-        text-align: right;
-        color: whitesmoke;
-        line-height: 50px;
-        margin-right: 10px; 
-        
-    }
-    */
-    /* DOY COLOR Y DISPLAY BLOCK AL ICONO DE MENU MOBILE */
-.label-menu 
-    {
-        display: block;
-        color: white;
-        
-    }
     /* Estilos para h1   VER SI EN MOBILE TAMBIEN TIENEN QUE IR ASI*/ 
     .title
     {
@@ -142,7 +117,15 @@
     {
         width: 100%;
     }
-   
+    .row-mobile
+    {
+        flex-direction: column;
+        align-content: center;
+    }
+    .home-img-oculta-mobile
+    {
+       display: none;
+    }
     /*Blog*/
 
     .backgroundcolor-blog 
@@ -602,30 +585,6 @@ footer h3
         height: auto;  
     }
 
-    /* NAVBAR */
-    .label-menu
-    {
-      display: none;
-    }
-     nav
-    {
-      display: block;
-     
-    }
-    .navigation-page
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-       
-    }
-    .navigation-page li
-    {
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-    }
-
     /*TITULO IMAGEN CENTRADA  */
     .text-center-img
     {
@@ -649,7 +608,15 @@ footer h3
   {
       margin-top: 30px;
   }
-  
+  .home-img-oculta-mobile
+    {
+       display: block;
+    }
+    .row-mobile
+    {
+        flex-direction: row;
+        align-content: center;
+    }
   /* BLOG */
 
       /* Acomodo imagenes ,textos y comentarios del blog */
@@ -778,47 +745,14 @@ footer h3
 @media screen and (min-width:700px) 
 {
 
-    /* NUEVO MENU PARA PAGINAS SIN MOBILE */
+    /*Acomodo imagen para tablet */
       .logo
       {
-          position: absolute;
+          position: relative;
           width: 200px;
           top: 20px;
       }
       
-      /* MENU NAVBAR */
-      .label-menu
-      {
-        display: none;
-      }
-       nav
-      {
-        display: block;
-       
-      }
-      .navigation-page
-      {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-         
-      }
-
-      .container{
-          display: inline;
-      }
-
-      .navigation-page li a
-      {
-          margin-right:30px;
-      }
-      .navigation-page li
-      {
-          border-bottom: none;
-          border-left: none;
-          border-right: none;
-      }
-
       /*TITULO IMAGEN CENTRADA  */
       .text-center-img
       {
@@ -1038,44 +972,6 @@ footer h3
           padding-top: 5px;
           padding-bottom: 5px;
       }
-      .container 
-      {
-          padding: 2rem;
-         
-      }
-      
-
-      /*MENU ESCRITORIO */
-      .label-menu
-      {
-          display: none;
-      }
-       nav
-      {
-        display: block;
-       
-    }
-      .navigation-page
-      {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-         
-      }
-
-      .container{
-          display: inline;
-      }
-
-      .navigation-page li a
-      {
-          margin-right:50px;
-          border-bottom: none;
-      }
-      
-      
-    
-    
     /* divido en dos el contenido de los dos parrafos inferiores */
     .column-text-image
     {
