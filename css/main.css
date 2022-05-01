@@ -217,31 +217,6 @@
     {
         font-size: 40px;
     }
-/* Acomodo imagenes para que tengan una separacion entre todas */
-/* .column-img-portfolio img
-    {
-        width: 100%;
-       
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-    }
-.column-img-portfolio
-    {
-        display: flex;
-        flex-direction: column;
-    }
-.img-abajo-t
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;    
-    }
-
-.backgroundcolor-portfolio
-    {
-        background-color: #696261;
-    }   */
 .portfolio-container
 {
     padding-bottom: 32px;
@@ -491,7 +466,7 @@ footer ul li
 
 footer
     {
-        background-color: #010a1a;
+        background-color: #234066;
         color: whitesmoke;
         padding-top: 10px;  
     }
@@ -720,10 +695,7 @@ footer h3
        width: 270px;
   }
 
-  .backgroundcolor-portfolio
-  {
-      background-color: #696261;
-  } 
+  
 
 /* SHOP */
 /* Acomodo cards de productos */
@@ -899,7 +871,7 @@ footer h3
 
     footer
     {
-        background-color: #010a1a;
+        /* background-color: #010a1a; */
         color: whitesmoke;
         padding-top: 10px;  
     }
@@ -1274,7 +1246,7 @@ footer h3
  
      footer
      {
-         background-color: #010a1a;
+         /* background-color: #010a1a; */
          color: whitesmoke;
          padding-top: 10px;  
      }
