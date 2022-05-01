@@ -1023,23 +1023,37 @@ footer h3
        text-align: justify;
       
     }
+    #texto-bllog3
+    {
+        scroll-behavior: initial;
+    }
     /* Texto entero del blog */
     .img-blog-detallado img
     {
         width: 500px;
-       
     }
-    /* Centro contenedor de la imagen en el medio */
+    /* Acomodo imagen con el texto */
     .img-blog-detallado
     {
        width: 500px;
-       margin-left: auto;
-       margin-right: auto;
+       float: left;
+       margin-right: 10px;
     }
     .texto-blog-detallado
     {
-        margin-top: 15px;
+       text-align: justify;
+       
     }
+   .texto-blog-detallado::first-letter
+   {
+       scroll-behavior: initial;
+   }
+
+    /* Coloco texto al lado de las imagenes */
+    /* .contenedor-blog
+    {
+        display: relative;
+    } */
     /* PORTFOLIO */
     .container-portfolio
     {
