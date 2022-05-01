@@ -42,7 +42,7 @@
     {
         font-family: 'Oswald',sans-serif;
         font-weight: 800;
-        color: #fff;
+        color: black;
         font-size: 100px;
         padding-top: 40px;
         text-align: center;
@@ -133,10 +133,7 @@
     }
     /*Blog*/
 
-    .backgroundcolor-blog 
-    {
-        background-color: #696261;
-    }
+    
 
     /* BLOG */
 
@@ -998,7 +995,7 @@ footer h3
     /* BLOG */
 
         /* Acomodo imagenes ,textos y comentarios del blog */
-
+/* 
     .img-text-blog img
     {
         width: 80%;
@@ -1039,7 +1036,7 @@ footer h3
         align-items: center;
     }
 
-    /* comentario de blog */
+    /* comentario de blog 
     .escribir-comentario
     {
     width: auto;
@@ -1070,8 +1067,37 @@ footer h3
         margin-top: 1rem;
         background-color: transparent;
         font-size: 1rem;
-    }
+    } */
 
+
+    /* Blog nuevo con boostrap */
+
+    .img-blog img
+    {
+        width: 100%;
+        border-radius: 5px;
+        padding-right: 0;
+    }
+   
+    .bordes-cards-blog
+    {
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 10px;
+        background-color: #cc2d42;
+    }
+    
+    .container-cards-blog
+    {
+        margin-bottom: 50px;
+    }
+    .texto-blog 
+    {
+       text-align: justify;
+      
+    }
     /* PORTFOLIO */
     .container-portfolio
     {
