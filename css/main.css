@@ -92,7 +92,6 @@
     /* Fondo y padding de texto abajo de imagen */
     .home-text
     {
-        /* background-color: #696261; */
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -131,9 +130,10 @@
     {
        display: none;
     }
-    /*Blog*/
-
-    
+    .row-home-text
+    {
+        flex-direction: column;
+    }
 
     /* BLOG */
 
@@ -212,6 +212,11 @@
     /*Portfolio*/
   
 /* PORTFOLIO MOBILE  */
+.container-portfolio
+{
+    flex-direction: column;
+    align-items: center;
+}
 .backgroundcolor-portfolio h1
     {
         font-size: 40px;
@@ -601,6 +606,11 @@ footer h3
   .home-img-oculta-mobile
     {
        display: block;
+       
+    }
+    .home-img-oculta-mobile img
+    {
+        border-radius: 30px;
     }
     .row-mobile
     {
@@ -692,7 +702,10 @@ footer h3
     {
         margin-top: 30px;
     }
-    
+    .row-home-text
+    {
+        flex-direction: row;
+    }
     /* BLOG */
     /* Acomodo containers en columnas y agrando un poco las imagenes */
     
@@ -700,7 +713,10 @@ footer h3
     {
         width: 350px;
     }
-
+    .container-portfolio
+    {
+        flex-direction: row;
+    }
     /* FOOTER  */
     .row-footer
     {
