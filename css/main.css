@@ -241,26 +241,17 @@
         padding-top: 10px;
         text-align: center;
     }
-.filter-product
-{
-         width: 80%;
-        background-color: #37a69c;
-        border-radius: 10px;
-}
- /* Oculto menu de filtros y saco puntos en el menu de filtro*/
-.filter-product ul
-    {
-        padding-top: 10px;
-        padding-bottom: 5px;
-        list-style: none;  
-    }
-
+/* Estilo a mi dropdown de filtro */
+        .dropdown
+        {
+            margin-left: 120px;
+        }
 /* Grid para acomodar las cards del shop y boton de filtro */
 .product-wrapper
     {
         display: grid;
         grid-template:
-        "filter-product filter-product" 
+        "dropdown dropdown" 
         "container-product container-product"
         ;
         justify-items: center;
@@ -348,9 +339,6 @@
         padding-top: 10px;
         padding-right: 10px;
         padding-left: 10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
     }
 .btn-comprar button
     {
@@ -951,7 +939,7 @@ footer h3
     .product-wrapper
         {
             grid-template:
-        "filter-product container-product" 
+        "dropdown container-product" 
         ;
         justify-items: start;
         justify-content: start;
@@ -987,15 +975,21 @@ footer h3
             "container-product container-product"
             ;     
         }
+    
     .card-container
         {
             grid-area: container-product;
+            display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;  
         }
+    .dropdown
+    {
+        margin-left: 15px;
+    }
     .card-product
         {
-            width: 250px;
+            width: 350px;
+          
         }
     .description-product
         {

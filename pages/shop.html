@@ -51,29 +51,48 @@
         <h1 class="title-shop">Nuestro shop</h1>
         <div class="product-wrapper">
             <!-- Creo div para filtros de productos -->
-                <div class="filter-product">
-                    <label for=""class="btn-filter">Filtros</label>
-                    <ul>
+                <!-- <div class="filter-product"> -->
+                    <!-- <label for=""class="btn-filter">Filtros</label> -->
+                    <!-- <ul>
                         <li>PRECIO</li>
                         <li>DESCRIPCION</li>
-                    </ul>
+                    </ul> -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Filtros
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">PRECIO</a></li>
+                          <li><a class="dropdown-item" href="#">DESCRIPCION</a></li>
+                          
+                        </ul>
+                      <!-- </div> -->
                 </div>
             <!-- Creo cards de productos de venta -->
             <div class="container-product">
                 <div class="card-product">
                     <div class="card-container">
-                        <div class="img-product">
-                            <img src="../public/shop/remerapablangaamarillo.jpg" alt="remera de anga pablanga amarilla">   
+                        <div class="row">
+                            <div class="col">
+                                <div class="img-product">
+                                    <img src="../public/shop/remerapablangaamarillo.jpg" alt="remera de anga pablanga amarilla">   
+                                </div>
+                            </div>  
                         </div>
-                        <div class="description-product">
-                            <p>Remera lisa Anga Pablanga amarilla</p>
-                            <div class="price-product">
-                                <p>$4500</p>
-                            </div>
-                            <div class="btn-comprar">
-                                <button>Agregar al carrito</button>
+                        <div class="row row-description">
+                            <div class="col">
+                                <div class="description-product">
+                                    <p>Remera lisa Anga Pablanga amarilla</p>
+                                    <div class="price-product">
+                                        <p>$4500</p>
+                                    </div>
+                                    <div class="btn-comprar">
+                                        <button>Agregar al carrito</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="card-product">
