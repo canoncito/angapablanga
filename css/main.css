@@ -995,7 +995,10 @@ footer h3
         {
            margin-left: 5px;
         }
-
+        .img-product img
+    {
+        margin-bottom: 5px;
+    }
         /* CCONTACTO */
 
         .container-map-form
@@ -1007,7 +1010,6 @@ footer h3
         {
             position: relative;
             bottom: 250px;
-           
             left: 20%;
         }
         .row-contact form
@@ -1017,7 +1019,7 @@ footer h3
         margin-right: 10px;
         margin-bottom: 10px;
         width: 100%;
-        text-align: start;    
+        text-align: center;    
     }
     .container-contact
     {
