@@ -386,26 +386,30 @@
     }
 
 /* estilo para formulario y acomodarlo al medio*/
-.row-contact form
+    .container-map-form
     {
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: start;    
+        padding-bottom: 10px;
     }
     .container-contact
     {
         padding-bottom: 10px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        position: relative;
+        width: 250px;
+        
+        background-color: #322d6e;
+        margin-bottom: 5px;
+        color: whitesmoke;
+        border-radius: 20px;
     }
-.form-control
+    .btn-success
     {
-        margin-top: 10px;
-        width: 90%;
+        margin-left: 22px;
+       
+    }
+    .contact-form
+    {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
 .form-control-textarea
@@ -415,23 +419,6 @@
         padding-right:40%;
     }
 
-.btn-contact
-    {
-        margin-top: 1rem;
-        text-align: center;
-    }
-
-.boton-contacto
-    {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: none;
-        border-radius: 20px;
-        background-color: #de093e;
-        color: whitesmoke;
-    }
 /* FOOTER MOBILE*/
 .row-footer
     {
@@ -704,6 +691,15 @@ footer h3
     .container-portfolio
     {
         flex-direction: row;
+    }
+    /* Contacto */
+    .container-contact
+    {
+        width: 100%;
+    }
+    .contact-message
+    {
+        width: 100%;
     }
     /* FOOTER  */
     .row-footer
@@ -1009,8 +1005,9 @@ footer h3
         .container-contact
         {
             position: relative;
-            bottom: 250px;
+            bottom: 310px;
             left: 20%;
+            opacity: 95%;
         }
         .row-contact form
     {
