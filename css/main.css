@@ -137,9 +137,78 @@
 
     /* BLOG */
 
-        /* Acomodo imagenes ,textos y comentarios del blog */
+        /* Acomodo imagenes ,textos  del blog */
 
+    .img-blog img
+    {
+        width: 100px;
+        border-radius: 5px;
+        padding-right: 0;
+    }
     
+    .bordes-cards-blog
+    {
+        flex-direction: row;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 10px;
+        background-color: #cc2d42;
+        width: 300px;
+        height: 150px;
+        margin-bottom: 5px;
+    }
+    
+    .container-cards-blog
+    {
+       
+        flex-direction: column;
+    }
+    .texto-blog 
+    {
+       text-align: start;
+       margin-left: 5px;
+    }
+    #texto-bllog3
+    {
+        scroll-behavior: initial;
+    }
+    /* Texto entero del blog */
+    .img-blog-detallado img
+    {
+        width: 300px;
+        border-radius: 40px;
+    }
+    /* Acomodo imagen con el texto */
+    .img-blog-detallado
+    {
+       width: 300px;
+      
+       margin-right: auto;
+       margin-left: auto;
+    }
+    .texto-blog-detallado
+    {
+       text-align:center;
+       
+    }
+   .texto-blog-detallado::first-letter
+   {
+       scroll-behavior: initial;
+   }
+   .contenedor-blog
+   {
+       margin-bottom: 30px;
+       font-family: 'Open-Sans', sans-serif;
+       font-weight: 300;
+       font-size: 1 rem;
+   }
+   .img-primera-blog-detallado
+   {
+       margin-top: 10px;
+   }
+
     /*Portfolio*/
   
 /* PORTFOLIO MOBILE  */
@@ -463,6 +532,12 @@ footer h3
 
 @media screen and (min-width: 480px)
 {
+    /* BLOG */
+    /* Acomodo cards de comentarios */
+    .container-cards-blog
+    {
+        align-items: flex-start;
+    }
     /* PORTFOLIO */
 /* Acomodo heigth de imagenes a responsive */
     .img-principal-portfolio img
@@ -619,82 +694,11 @@ footer h3
     }
     
     /* BLOG */
-
-        /* Acomodo imagenes ,textos y comentarios del blog */
-
-    .img-text-blog img
-    {
-        width: 80%;
-    }
-
-    .border-text-blog
-    {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-top: solid 1px black;
-        border-bottom: solid 1px black;
-    }
-
-    .border-text-blog p
-    {
-        width: 600px;
-        margin-top: 20px;
-        margin-bottom: 20px;  
-        padding-left: 40px;
-        padding-right: 40px;
-        text-align: center;
-        font-size: 40px;
-        font-family: 'Hind Siliguri','Open-Sans',sans-serif;
-    }
-    .column-blog
-    {
-        margin-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-text-blog
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
+    /* Acomodo containers en columnas y agrando un poco las imagenes */
     
-    /* comentario de blog */
-    .escribir-comentario
+    .img-blog-detallado img
     {
-    width: auto;
-    }
-    .comentario-blog span
-    {
-        margin-left: 1rem;
-        font-family: 'Ubuntu',sans-serif;
-        font-weight: 700;
-        color: #010a1a;
-    }
-    .escribir-comentario-blog textarea
-    {
-        margin-top: 10px;
-        resize: none;
-    }
-    .escribir-comentario-blog
-    {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    }
-    .btn-comentario
-    {
-        width: 150px;
-        height: 50px;
-        margin-top: 1rem;
-        background-color: transparent;
-        font-size: 1rem;
+        width: 350px;
     }
 
     /* FOOTER  */
@@ -854,9 +858,13 @@ footer h3
     }
     /* BLOG */
 
- /* Armo mini comentarios del blog */
 
-
+    .container-blog
+    {
+        flex-direction: row;
+        justify-content: center;
+        
+    }
     .img-blog img
     {
         width: 100%;
@@ -866,6 +874,7 @@ footer h3
    
     .bordes-cards-blog
     {
+        flex-direction: row;
         border: 1px solid black;
         border-radius: 30px;
         margin-right: 5px;
@@ -878,11 +887,7 @@ footer h3
     {
         margin-bottom: 50px;
     }
-    .texto-blog 
-    {
-       text-align: justify;
-      
-    }
+    
     #texto-bllog3
     {
         scroll-behavior: initial;
@@ -896,19 +901,26 @@ footer h3
     .img-blog-detallado
     {
        width: 500px;
-       float: left;
+       float: none;
        margin-right: 10px;
     }
     .texto-blog-detallado
     {
        text-align: justify;
-       
+       margin-left: 10px;
+       margin-right: 10px;
     }
    .texto-blog-detallado::first-letter
    {
        scroll-behavior: initial;
    }
-
+   .contenedor-blog
+   {
+       margin-bottom: 30px;
+       font-family: 'Open-Sans', sans-serif;
+       font-weight: 300;
+       font-size: 1 rem;
+   }
     /* PORTFOLIO */
     .container-portfolio
     {
@@ -1152,6 +1164,21 @@ footer h3
      }
  
 }
+@media screen and (min-width:1200px)
+{   
+    .img-blog-detallado
+    {
+        
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .texto-blog-detallado
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
 /* HOVERS */
 /* Animaciones a menues desktop*/
@@ -1161,14 +1188,7 @@ footer h3
 }
 
 /* KEYFRAMES */
-/* Efecto transicion menu mobile */
-@keyframes efecto-menu {
-    0%{transform: translateX(100%);}
-    25%{transform: translateX(75%);}
-    50%{transform: translateX(50%);}
-    75%{transform: translateX(25%);}
-    100%{transform: translateX(0%);}
-}
+
 /* Transicion de baner contacto */
 @keyframes baner-contact {
     0%{transform: translateX(0%);}
