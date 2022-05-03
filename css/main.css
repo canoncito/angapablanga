@@ -6,6 +6,9 @@
         box-sizing: border-box;
     }
 
+main{
+    background-color: #f0c44a;
+}
 
     /* color de fondo al header de las paginas y que siga el menu*/
     header
@@ -995,11 +998,12 @@ footer h3
     {
         margin-bottom: 5px;
     }
-        /* CCONTACTO */
+        /* CONTACTO */
 
         .container-map-form
         {
             height: 400px;
+            
         }
         /* pongo formulario dentro del mapa de google map */
         .container-contact
@@ -1061,11 +1065,11 @@ footer h3
        
         display: block;
         width: 650px;
-       
+        padding-bottom: 20px;
      } 
      .bannerpagecontact-1024 p
      {
-         font-family: 'Vazirmatn', sans-serif;
+        font-family: 'Vazirmatn', sans-serif;
         font-size: 80px;
         animation-name: baner-contact;
         animation-iteration-count: infinite;
