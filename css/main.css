@@ -10,12 +10,6 @@ main{
     background-color: #f0c44a;
 }
 
-    /* color de fondo al header de las paginas y que siga el menu*/
-    header
-    {
-     /* background-color: #010a1a; */
-     background-color: white;
-    }
     /* Modifico el navbar de boostrap */
    #navbarNav
    {
