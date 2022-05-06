@@ -11,7 +11,8 @@
   font-size: 80px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: whitesmoke; }
 
 .title-blog {
   font-family: 'Oswald',sans-serif;
@@ -19,7 +20,8 @@
   font-size: 80px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
 
 .title-portfolio {
   font-family: 'Oswald',sans-serif;
@@ -27,7 +29,8 @@
   font-size: 80px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
 
 .title-shop {
   font-family: 'Oswald',sans-serif;
@@ -35,7 +38,8 @@
   font-size: 80px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
 
 .title-contact {
   font-family: 'Oswald',sans-serif;
@@ -43,7 +47,8 @@
   font-size: 80px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
 
 /* Modifico el navbar de boostrap */
 .navbar {
@@ -64,9 +69,6 @@ nav div a img {
 
 /*Aca arranco mi HOME*/
 /*Le doy estilo a todo lo que esta dentro de mi imagen de fondo principal*/
-.contenido-foto-home h1 {
-  color: whitesmoke; }
-
 .home-page-img {
   width: 100%;
   height: 350px;

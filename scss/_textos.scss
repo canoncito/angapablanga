@@ -4,10 +4,21 @@
     .title-#{$titulo} 
     {
         font-family: 'Oswald',sans-serif;
-         font-weight: 500;
-         font-size: 80px;
-         padding-top: 10px;
-         text-align: center;
-         text-transform: uppercase;
-    }
+        font-weight: 500;
+        font-size: 80px;
+        padding-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+
+         @if ('.title-#{$titulo}'  == '.title-home')
+            {
+                color: whitesmoke;
+            }
+         @else
+            {
+                color: black;
+            }  
+    }   
+   
 }
+
