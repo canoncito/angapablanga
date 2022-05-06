@@ -1,0 +1,13 @@
+// Realizo un each para que todos mis h1 tengan ese estilo y despues lo modifico a mi gusto los colores
+/*Le doy estilo a mis H1*/
+@each $titulo in $lista-titulos {
+    .title-#{$titulo} 
+    {
+        font-family: 'Oswald',sans-serif;
+         font-weight: 500;
+         font-size: 80px;
+         padding-top: 10px;
+         text-align: center;
+         text-transform: uppercase;
+    }
+}

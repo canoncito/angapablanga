@@ -1,0 +1,48 @@
+
+    /* Modifico el navbar de boostrap */
+  
+    .navbar
+    {
+        position:sticky;
+        top: 0;
+        background-color: #234066;
+    }
+    
+    // Corro a la derecha la lista mobile cuando la desplego
+    nav
+    {
+        div 
+        {
+            ul
+            {
+                align-items: flex-end;
+            }
+        }
+    }
+    
+    // Logo de la pagina
+    nav
+    {
+        div
+        {
+            a
+            {
+                img
+                {
+                    position: relative;
+                    width: 150px;
+                    margin-left: 40px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    grid-area: logo;
+                }
+            }
+        }
+    }
+    
+
+    // Esto tiene que ir en media query de navbar
+    //  #navbarNav
+    // {
+    //     justify-content: flex-end;
+    // }

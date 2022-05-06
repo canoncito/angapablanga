@@ -1,0 +1,71 @@
+/*Aca arranco mi HOME*/
+
+// Le doy estilo a todo lo que esta dentro de mi imagen de fondo principal
+/*Le doy estilo a todo lo que esta dentro de mi imagen de fondo principal*/
+    .contenido-foto-home
+    {
+        h1
+        {
+            color: whitesmoke;
+        }
+    }
+
+    .home-page-img
+    {
+        width: 100%;
+        height: 350px;
+        background-image: url(../public/fotoprincipal.jpg);         
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;  
+    }
+
+   .contenido-foto-home
+   {
+        div
+       {
+           display: none;
+       }
+   }
+
+   .home-text
+   {
+        padding-top: 20px;
+        padding-bottom: 20px;
+   }
+
+   .home-text
+   {
+       p
+       {
+            font-family: 'Work Sans',sans-serif;
+            font-weight:  100;
+            font-size: 1rem;
+            text-align: center;
+       }
+   }
+
+//    Le doy estilo a la tabla
+/*Le doy estilo a mi tabla*/
+    .table
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: #5b84ba;
+    }
+
+    .home-img-oculta-mobile
+    {
+        display: none;
+    }
+
+    .separar-containers
+    {
+        div
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
