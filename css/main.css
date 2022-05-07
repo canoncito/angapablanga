@@ -8,7 +8,7 @@
 .title-home {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 45px;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
 .title-blog {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 45px;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -26,27 +26,27 @@
 .title-portfolio {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 45px;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
   color: black;
-  font-size: 60px; }
+  font-size: 50px; }
 
 .title-shop {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 45px;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
   color: black;
-  font-size: 60px; }
+  font-size: 50px; }
 
 .title-contact {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 45px;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -216,6 +216,28 @@ nav {
   background-color: #37a69c; }
 
 /*Aca arranco contactos*/
+.bannerpagecontact-1024 {
+  display: none; }
+
+.container-map-form {
+  padding-bottom: 10px; }
+  .container-map-form iframe {
+    padding-top: 20px;
+    width: 100%; }
+  .container-map-form .container-contact {
+    padding-bottom: 10px;
+    position: relative;
+    width: 250px;
+    background-color: #322d6e;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    border-radius: 20px; }
+    .container-map-form .container-contact .contact-form {
+      margin-left: 5px;
+      margin-right: 5px; }
+    .container-map-form .container-contact .btn-success {
+      margin-left: 52px; }
+
 /*Aca arranco mi footer*/
 footer {
   background-color: #234066;

@@ -5,7 +5,7 @@
     {
         font-family: 'Oswald',sans-serif;
         font-weight: 500;
-        font-size: 80px;
+        font-size: 45px;
         padding-top: 10px;
         text-align: center;
         text-transform: uppercase;
@@ -21,7 +21,7 @@
 
          @if (('.title-#{$titulo}'  == '.title-portfolio') or ('.title-#{$titulo}'  == '.title-shop' ))
             {
-                font-size: 60px;
+                font-size: 50px;
             }      
     }   
    
