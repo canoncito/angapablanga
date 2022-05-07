@@ -9,7 +9,7 @@
         padding-top: 10px;
         text-align: center;
         text-transform: uppercase;
-
+        // Le doy color solo a mi home ya que mi h1 esta dentro de una imagen blanco y negro
          @if ('.title-#{$titulo}'  == '.title-home')
             {
                 color: whitesmoke;
@@ -17,7 +17,12 @@
          @else
             {
                 color: black;
-            }  
+            }
+            
+         @if ('.title-#{$titulo}'  == '.title-portfolio')
+            {
+                font-size: 60px
+            }      
     }   
    
 }

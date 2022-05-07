@@ -109,8 +109,9 @@
 {
     font-family: 'Open-Sans', sans-serif;
     font-weight: 300;
-    font-size: 1 rem;
     padding-bottom: 20px;
+  
+
     div
     {
         width: 300px;
@@ -129,6 +130,27 @@
 
 .img-primera-blog-detallado
 {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
+/*Aca arranco mi portfolio*/
+
+.porfolio-container
+{
+    padding-bottom: 32px;
+    
+}
+
+.container-img
+{
+    flex-direction: column;
+    div
+    {
+        p
+        {
+            text-align:justify;
+            // Le saco espaciado que me mete por defecto en algunas palabras del texto el justify
+           word-spacing: -2px;
+        }
+    }
+}

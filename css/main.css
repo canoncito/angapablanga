@@ -30,7 +30,8 @@
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+  font-size: 60px; }
 
 .title-shop {
   font-family: 'Oswald',sans-serif;
@@ -140,7 +141,6 @@ nav {
 .contenedor-blog {
   font-family: 'Open-Sans', sans-serif;
   font-weight: 300;
-  font-size: 1 rem;
   padding-bottom: 20px; }
   .contenedor-blog div {
     width: 300px;
@@ -152,7 +152,17 @@ nav {
       border-radius: 40px; }
 
 .img-primera-blog-detallado {
-  margin-top: 10px; }
+  margin-top: 30px; }
+
+/*Aca arranco mi portfolio*/
+.porfolio-container {
+  padding-bottom: 32px; }
+
+.container-img {
+  flex-direction: column; }
+  .container-img div p {
+    text-align: justify;
+    word-spacing: -2px; }
 
 /*Aca arranco mi footer*/
 footer {
