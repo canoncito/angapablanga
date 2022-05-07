@@ -4,7 +4,7 @@ footer
     background-color: #234066;
     color: whitesmoke;
     padding-top: 10px;
-       
+    //    Pongo en columna el footer y alineo los elementos para mobile
             div
             {
                 display: flex;
@@ -45,11 +45,12 @@ footer
                             margin-bottom: 10px;
                             margin-left: 10px;
                             margin-right: 10px;
-
+                            text-align: center;
                             a
                             {
                                 color: whitesmoke;
-                                text-decoration: none;    
+                                text-decoration: none;
+                                   
                             }
                             
                         }

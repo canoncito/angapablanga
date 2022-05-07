@@ -56,16 +56,16 @@ main{
 
     /* BLOG */
 
-        /* Acomodo imagenes ,textos  del blog */
+        /* Acomodo imagenes ,textos  del blog
 
     .img-blog img
     {
         width: 100px;
         border-radius: 5px;
         padding-right: 0;
-    }
+    } */
     
-    .bordes-cards-blog
+    /* .bordes-cards-blog
     {
         flex-direction: row;
         border: 1px solid black;
@@ -77,9 +77,9 @@ main{
         width: 300px;
         height: 150px;
         margin-bottom: 5px;
-    }
+    } */
     
-    .container-cards-blog
+    /* .container-cards-blog
     {
        
         flex-direction: column;
@@ -92,14 +92,15 @@ main{
     #texto-bllog3
     {
         scroll-behavior: initial;
-    }
-    /* Texto entero del blog */
+    } */
+    /* Texto entero del blog 
     .img-blog-detallado img
     {
         width: 300px;
         border-radius: 40px;
     }
-    /* Acomodo imagen con el texto */
+    */
+    /* Acomodo imagen con el texto 
     .img-blog-detallado
     {
        width: 300px;
@@ -107,6 +108,7 @@ main{
        margin-right: auto;
        margin-left: auto;
     }
+    
     .texto-blog-detallado
     {
        text-align:center;
@@ -127,7 +129,7 @@ main{
    {
        margin-top: 10px;
    }
-
+*/
     /*Portfolio*/
   
 /* PORTFOLIO MOBILE  */

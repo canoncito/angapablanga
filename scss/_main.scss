@@ -68,3 +68,67 @@
         align-items: center;
     }
 }
+
+/*Aca arrango mi blog*/
+
+  .img-blog
+  {
+      
+// Creo las cards de comentarios del blog
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 10px;
+    background-color: #cc2d42;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 5px;
+    // Acomodo imagen dentro del blog
+      img
+      {
+        width: 100px;
+        border-radius: 5px;
+        padding-right: 0;
+      }
+      
+  }
+
+  .container-cards-blog
+  {
+      justify-content: center;
+  }
+    .texto-blog 
+    {
+       text-align: start;
+       margin-left: 5px;
+    }
+
+// Creo conenido de los blog y ajustando imagenes a los tamaños
+.contenedor-blog
+{
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1 rem;
+    padding-bottom: 20px;
+    div
+    {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        img
+        {
+            width: 300px;
+            border-radius: 40px;
+        }
+        
+    }
+    
+}
+
+.img-primera-blog-detallado
+{
+    margin-top: 10px;
+}
+
