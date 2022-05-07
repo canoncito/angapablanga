@@ -132,7 +132,7 @@ main{
 */
     /*Portfolio*/
   
-/* PORTFOLIO MOBILE  */
+/* PORTFOLIO MOBILE  
 .container-portfolio
 {
     flex-direction: column;
@@ -145,15 +145,15 @@ main{
 .portfolio-container
 {
     padding-bottom: 32px;
-}
+}*/
 /* SHOP NUEVO MOBILE */
 
 /* Fondo de shop y acomodo el titulo */
-.backgroundcolor-shop
+/* .backgroundcolor-shop
     {
         background-color: #f0c44a; 
-    }
-.title-shop
+    } */
+/* .title-shop
     {
         font-family: 'Oswald',sans-serif;
         font-weight: 800;
@@ -161,7 +161,7 @@ main{
         font-size: 50px;
         padding-top: 10px;
         text-align: center;
-    }
+    } */
 /* Estilo a mi dropdown de filtro */
         .dropdown
         {
@@ -178,13 +178,13 @@ main{
         justify-items: center;
     }
 /* grid area al div de filtro*/
-.filter-product
+/* .filter-product
     {
         margin-top: 10px;
         grid-area: filter-product;
        text-align: center;
     }
-/* Estilo de boton de filtros */
+/* Estilo de boton de filtros 
 .filter-product label
     {
         border-radius: 5px;
@@ -208,7 +208,7 @@ main{
         cursor: pointer;
         width: 150px;
         border-radius: 10px;
-    }
+    } */
 
 /* Acomodo imagenes para mobile dentro del card*/
 .img-product img

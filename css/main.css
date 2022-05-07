@@ -40,7 +40,8 @@
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+  font-size: 60px; }
 
 .title-contact {
   font-family: 'Oswald',sans-serif;
@@ -164,6 +165,57 @@ nav {
     text-align: justify;
     word-spacing: -2px; }
 
+/*Aca arranco el shop*/
+.product-wrapper {
+  display: grid;
+  grid-template: auto "dropdown dropdow" "container-product container-product";
+  justify-items: center; }
+
+.dropdown {
+  grid-area: dropdown; }
+
+.container-product {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  grid-area: container-product;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .container-product .card-product {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 100px;
+    border: solid 2px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 5px 0 #262522;
+    background-color: whitesmoke; }
+    .container-product .card-product .card-container {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-left: 10px; }
+  .container-product div img {
+    width: 100%;
+    border-radius: 5px; }
+
+.description-product {
+  padding-bottom: 5px;
+  text-align: center; }
+  .description-product p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: black; }
+
+.btn-comprar button {
+  border-radius: 5px;
+  background-color: #37a69c; }
+
+/*Aca arranco contactos*/
 /*Aca arranco mi footer*/
 footer {
   background-color: #234066;

@@ -18,10 +18,10 @@
             {
                 color: black;
             }
-            
-         @if ('.title-#{$titulo}'  == '.title-portfolio')
+
+         @if (('.title-#{$titulo}'  == '.title-portfolio') or ('.title-#{$titulo}'  == '.title-shop' ))
             {
-                font-size: 60px
+                font-size: 60px;
             }      
     }   
    
