@@ -4,6 +4,21 @@
   padding: 0;
   box-sizing: border-box; }
 
+.backgroundcolor-home {
+  background-color: #f0c44a; }
+
+.backgroundcolor-blog {
+  background-color: #f0c44a; }
+
+.backgroundcolor-portfolio {
+  background-color: #f0c44a; }
+
+.backgroundcolor-shop {
+  background-color: #f0c44a; }
+
+.backgroundcolor-contact {
+  background-color: #f0c44a; }
+
 /*Le doy estilo a mis H1*/
 .title-home {
   font-family: 'Oswald',sans-serif;
@@ -51,36 +66,24 @@
   color: black; }
 
 /* Modifico el navbar de boostrap */
-nav {
+.navbar {
   position: sticky;
   top: 0;
   background-color: #234066; }
-  nav div a img {
-    position: relative;
-    width: 150px;
-    margin-left: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    grid-area: logo; }
-  nav div ul {
-    align-items: flex-end; }
 
-.backgroundcolor-home {
-  background-color: #f0c44a; }
+nav div ul {
+  align-items: flex-end; }
 
-.backgroundcolor-blog {
-  background-color: #f0c44a; }
-
-.backgroundcolor-portfolio {
-  background-color: #f0c44a; }
-
-.backgroundcolor-shop {
-  background-color: #f0c44a; }
-
-.backgroundcolor-contact {
-  background-color: #f0c44a; }
+nav div a img {
+  position: relative;
+  width: 150px;
+  margin-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  grid-area: logo; }
 
 /*Aca arranco mi HOME*/
+/*Le doy estilo a todo lo que esta dentro de mi imagen de fondo principal*/
 .home-page-img {
   width: 100%;
   height: 350px;
@@ -88,18 +91,21 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-  .home-page-img div div {
-    display: none; }
+
+.contenido-foto-home div {
+  display: none; }
 
 .home-text {
   padding-top: 20px;
   padding-bottom: 20px; }
-  .home-text p {
-    font-family: 'Work Sans',sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    text-align: center; }
 
+.home-text p {
+  font-family: 'Work Sans',sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  text-align: center; }
+
+/*Le doy estilo a mi tabla*/
 .table {
   width: 100%;
   margin-left: auto;
@@ -114,41 +120,50 @@ nav {
   flex-direction: column;
   align-items: center; }
 
-/*Aca arranco mi footer*/
+.container-footer div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+/* a cada columna le doy el 25% para armar 4 columnas del total del width */
+.columna-footer h3 {
+  border-bottom: solid 1px white; }
+
+.columna-footer a img {
+  margin-top: 1rem;
+  width: 250px; }
+
+footer ul li {
+  margin-bottom: 10px; }
+
 footer {
   background-color: #234066;
   color: whitesmoke;
   padding-top: 10px; }
-  footer .container-footer {
-    /*Acomodo , estilos iconos de redes*/ }
-    footer .container-footer div {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center; }
-      footer .container-footer div div a img {
-        margin-top: 1rem;
-        width: 250px; }
-      footer .container-footer div div h3 {
-        border-bottom: solid 1px white; }
-      footer .container-footer div div ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 30px;
-        list-style: none;
-        margin-top: 10px;
-        padding-left: 0px; }
-        footer .container-footer div div ul li {
-          margin-bottom: 10px;
-          margin-left: 10px;
-          margin-right: 10px; }
-          footer .container-footer div div ul li a {
-            color: whitesmoke;
-            text-decoration: none; }
 
-.columna-contact ul li {
+/*Acomodo y estilos iconos de redes*/
+.columna-footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0px; }
+
+.columna-contact ul {
   font-size: 1rem; }
+
+.columna-footer ul li {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.columna-footer ul li a {
+  color: whitesmoke; }
+
+.nav-footer ul li a {
+  text-decoration: none; }
 
 .bar-footer {
   background-color: black;

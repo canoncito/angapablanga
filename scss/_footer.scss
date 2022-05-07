@@ -1,122 +1,86 @@
-.container-footer
-{
-    div
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-}
-
-// A cada columna le doy el 25% para armar 4 columnas del total del width
-/* a cada columna le doy el 25% para armar 4 columnas del total del width */
-
-.columna-footer
-{
-    h3
-    {
-        border-bottom: solid 1px white;
-    }
-}
-
-.columna-footer
-{
-    a
-    {
-        img
-        {
-            margin-top: 1rem;
-            width: 250px;  
-        }
-    }
-}
-
-footer
-{
-    ul
-    {
-        li
-        {
-            margin-bottom: 10px;
-        }
-    }
-}
-
+/*Aca arranco mi footer*/
 footer
 {
     background-color: #234066;
     color: whitesmoke;
     padding-top: 10px;
+        .container-footer
+        {
+            div
+            {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                div
+                {
+                    a
+                    {
+                        // Le doy tamano a mi imagen para mobile
+                        img
+                        {
+                            margin-top: 1rem;
+                            width: 250px;  
+                        }
+                    }
+                }
+                div
+                {
+                    h3
+                    {
+                        border-bottom: solid 1px white;
+                    }
+                    // Pongo en columna mi lista para mobile y acomodo los textos
+                    ul
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center; 
+                        font-size: 30px;
+                        list-style: none;
+                        margin-top: 10px;
+                        padding-left: 0px;
+            
+                        li
+                        {
+                            margin-bottom: 10px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+
+                            a
+                            {
+                                color: whitesmoke;
+                                text-decoration: none;    
+                            }
+                            
+                        }
+                    }
+               
+            }
+        }
+        // Acomodo , estilos iconos de redes y separacion de las listas en mis columnas de footer
+        /*Acomodo , estilos iconos de redes*/
+       
+        }
+
+
 }
-
-// Acomodo y estilos iconos de redes
-/*Acomodo y estilos iconos de redes*/
-
-.columna-footer
-{
-    ul
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        font-size: 30px;
-        list-style: none;
-        margin-top: 10px;
-        padding-left: 0px;
-    }
-}
-
 // Cambio fontsize de datos de contacto
 .columna-contact
 {
     ul
     {
-        font-size: 1rem;
+        li
+        {
+            
+                font-size: 1rem;
+            
+        }
+       
        
     }
 }
 
-.columna-footer
-{
-    ul
-    {
-        li
-        {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    }
-}
-
-.columna-footer
-{
-    ul
-    {
-        li
-        {
-            a
-            {
-                color: whitesmoke;
-                
-            }
-        }
-    }
-}
-
-.nav-footer
-{
-    ul
-    {
-        li
-        {
-            a
-            {
-                text-decoration: none;
-            }
-        }
-    }
-}
 
 // Barra de footer con copyright
 
