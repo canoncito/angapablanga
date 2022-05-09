@@ -381,7 +381,11 @@ footer {
     flex-direction: row; }
   /* BLOG */
   /* Acomodo containers en columnas y agrando un poco las imagenes */
-  .img-blog-detallado img {
+  .img-blog-detallado {
+    align-content: center; }
+    .img-blog-detallado img {
+      width: 350px; }
+  .container-img div p {
     width: 350px; }
   .container-portfolio {
     flex-direction: row; }
@@ -482,7 +486,7 @@ ul li a:hover {
     margin-top: 50px; }
   .row {
     align-items: flex-start; }
-  .container-img {
+  .container-img-home {
     margin-top: 20px; }
   .separar-containers {
     margin-top: 50px; }
@@ -533,6 +537,10 @@ ul li a:hover {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
     font-size: 1rem; }
+  .container-img {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; }
   /* SHOP */
   /* Modifico grid para poner filtros de busqueda de costado y el shop por la derecha */
   .product-wrapper {

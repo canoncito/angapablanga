@@ -175,7 +175,18 @@
         {
             width: 350px;
         }
-        
+        align-content: center;
+    }
+
+    .container-img
+    {
+        div
+        {
+            p
+            {
+                width: 350px;
+            }
+        }
     }
     .container-portfolio
     {
@@ -392,7 +403,7 @@
     {
         align-items: flex-start;
     }
-    .container-img
+    .container-img-home
     {
        
        margin-top: 20px;
@@ -491,6 +502,13 @@
         font-family: 'Ubuntu', sans-serif;
         font-weight: 600;
         font-size: 1rem;
+    }
+
+    .container-img
+    {
+       flex-direction: row;
+       align-items: center;
+       margin-bottom: 20px;
     }
     /* SHOP */
 
