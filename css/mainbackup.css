@@ -825,7 +825,7 @@ footer h3
         {
             grid-area: container-product;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
     .dropdown
     {

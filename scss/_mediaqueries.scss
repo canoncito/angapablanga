@@ -322,7 +322,17 @@
         padding-bottom: 1rem;
     }
 }
-
+@media screen and (min-width: 992px)
+{
+    .container-fluid
+    {
+        div
+        {
+            justify-content: flex-end;
+        }
+        
+    }
+}
 
 @media screen and (min-width:1024px) 
 {
@@ -338,26 +348,45 @@
           padding-bottom: 5px;
       }
     /* divido en dos el contenido de los dos parrafos inferiores */
+    .home-page-img
+    {
+        div{
+            div{
+                height: 250px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+            }
+        }
+               
+        
+        
+    }
+   
     .column-text-image
     {
-        height: 250px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        section
+        {
+            width: 550px;
+            margin-top: 50px;
+            margin-left: 60px;
+            margin-right: 60px;
+            color: whitesmoke;
+            font-size: 20px;
+           
+            
+        }
+       
     }
-
-    .column-izq-img, .column-der-img
+    .row-home-text
     {
-        width: 550px;
-        margin-top: 50px;
-        margin-left: 60px;
-        margin-right: 60px;
+        flex-direction: column;
     }
-
     .table
     {
         width: 70%;
+        margin-top: 50px;
     }
     .row
     {
@@ -368,14 +397,18 @@
        
        margin-top: 20px;
     }
+
     .separar-containers
     {
-        margin-top: 50px;
-    }
-    .table
+    margin-top: 50px;
+
+    div
     {
-        margin-top: 50px;
+        flex-direction: row;
+        align-items: center;
     }
+    }
+    
     /* BLOG */
 
 
@@ -385,22 +418,29 @@
         justify-content: center;
         
     }
-    .img-blog img
+    .img-blog 
     {
+        height: 170px;
+        width: 310px;
+        img
+        {
         width: 100%;
         border-radius: 5px;
         padding-right: 0;
+        }
+        
     }
    
     .bordes-cards-blog
     {
         flex-direction: row;
-        border: 1px solid black;
         border-radius: 30px;
+        height: 170px;
+        width: 300px;
         margin-right: 5px;
         margin-left: 5px;
         padding-top: 10px;
-        background-color: #cc2d42;
+       
     }
     
     .container-cards-blog
@@ -408,38 +448,41 @@
         margin-bottom: 50px;
     }
     
-    #texto-bllog3
-    {
-        scroll-behavior: initial;
-    }
+   
     /* Texto entero del blog */
-    .img-blog-detallado img
+    .img-blog-detallado 
     {
         width: 500px;
+        float: none;
+        margin-right: 10px;
+
+        img
+        {
+            width: 500px;
+        }
+        
     }
     /* Acomodo imagen con el texto */
-    .img-blog-detallado
-    {
-       width: 500px;
-       float: none;
-       margin-right: 10px;
-    }
+    
     .texto-blog-detallado
     {
-       text-align: justify;
-       margin-left: 10px;
-       margin-right: 10px;
+        p
+        {
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+       
     }
-   .texto-blog-detallado::first-letter
-   {
-       scroll-behavior: initial;
-   }
+   
    .contenedor-blog
    {
-       margin-bottom: 30px;
-       font-family: 'Open-Sans', sans-serif;
-       font-weight: 300;
-       font-size: 1 rem;
+       display: flex;
+       flex-direction: column;
+       div
+       {
+           width: 100%;
+       }
    }
     /* PORTFOLIO */
     .container-portfolio
@@ -460,29 +503,7 @@
         justify-items: start;
         justify-content: start;
         }
-    .filter-product
-        {
-            margin-bottom: 10px;
-            margin-left: 10px;
-            width: 200px;
-           
-        }
-    /* Acomodo botones de filtros de busqueda y le doy estilos de boton*/
-    .filter-product ul li
-        {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            background-color: #d14d21;
-            cursor: pointer;
-            width: 70%;
-            border-radius: 10px;
-        }
-
+    
       /* Creo grid de productos para 2 columnas */
     .container-product
         {
@@ -496,7 +517,7 @@
         {
             grid-area: container-product;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
     .dropdown
     {
@@ -511,41 +532,50 @@
         {
            margin-left: 5px;
         }
-        .img-product img
+        .img-product 
     {
-        margin-bottom: 5px;
+        img
+        {
+            width: 100%;
+            margin-bottom: 5px;
+            
+        }
+        
     }
         /* CONTACTO */
 
         .container-map-form
         {
             height: 400px;
-            
+            .container-contact
+            {
+                width: 50%;
+                position: relative;
+                bottom: 310px;
+                left: 20%;
+                opacity: 95%;
+                padding-bottom: 10px;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         /* pongo formulario dentro del mapa de google map */
-        .container-contact
-        {
-            position: relative;
-            bottom: 310px;
-            left: 20%;
-            opacity: 95%;
-        }
-        .row-contact form
+       
+        .row-contact 
     {
+        form
+        {
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
         width: 100%;
-        text-align: center;    
+        text-align: center; 
+        }  
+           
     }
-    .container-contact
-    {
-        padding-bottom: 10px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  
     .form-control
         {
             margin-top: 10px;
@@ -584,8 +614,10 @@
         width: 650px;
         padding-bottom: 20px;
      } 
-     .bannerpagecontact-1024 p
+     .bannerpagecontact-1024 
      {
+         p
+        {
         font-family: 'Vazirmatn', sans-serif;
         font-size: 80px;
         animation-name: baner-contact;
@@ -593,9 +625,12 @@
         animation-timing-function: ease-in-out;
         animation-duration: 10s;
         animation-delay: 1s;
+         }
+        
         
      }
      /* FOOTER */
+    
      .row-footer
      {
          flex-direction: row;
@@ -605,12 +640,13 @@
      /* a cada columna le doy el 25% para armar 4 columnas del total del width */
      .columna-footer
      {
-         width: 25%;    
+         width: 25%;
+         h3
+         {
+            border-bottom: none; 
+         }    
      }
-     .columna-footer h3
-     {
-        border-bottom: none;   
-     }
+    
  
      .logo-footer
      {
@@ -618,17 +654,33 @@
          margin-left: 1rem;
          width: 300px; 
      }
-     footer ul li
+     footer 
      {
-         margin-bottom: 10px;
+        color: whitesmoke;
+        padding-top: 10px;
+        
+        div
+        {
+            align-items: unset;
+        }
+        h3
+        {
+            text-align: center; 
+        }
+         ul
+         {
+            list-style: none;
+            margin-top: 10px;
+            text-align: center; 
+             li
+             {
+                margin-bottom: 10px;
+             }
+         }
+         
      }
  
-     footer
-     {
-         /* background-color: #010a1a; */
-         color: whitesmoke;
-         padding-top: 10px;  
-     }
+     
  
      /* Acomodo de iconos de redes centrados */
      .redes
@@ -641,17 +693,22 @@
          
      }
  
-     .redes li
+     .redes 
      {
-         margin-left: 10px;
-         margin-right: 10px;
-     }
- 
-     .redes a
-     {
-         color: whitesmoke;
-     
-         
+         ul
+         {
+             li
+             {
+                margin-left: 10px;
+                margin-right: 10px;
+                
+                a
+                {
+                    color: whitesmoke;
+                }
+             }
+         }
+        
      }
  
      .contact-column
@@ -659,38 +716,71 @@
          margin-top: 2rem;
      }
      /* Navegacion del footer con animacion */
-     footer ul
-     {
-         list-style: none;
-         margin-top: 10px;
-         text-align: center; 
-     }
-     footer h3
-     {
-         text-align: center; 
-     }  
  
-     .nav-footer li a
+  
+     .nav-footer 
      {
-         text-decoration: none;
-         color: whitesmoke;
-     }
- 
-     .nav-footer li a:hover
-     {
-         text-decoration: underline;
-     }
- 
-     /* Barra footer con copy */
-     .bar-footer
-     {
+         ul
+         {
+             li
+             {
+                 a
+                 {
+                    text-decoration: none;
+                    color: whitesmoke;
+                 }
+                 a:hover
+                 {
+                    text-decoration: underline;
+                 }
+             }
+         }
          
-         background-color: black;
-         text-align: center;  
-         padding-right: 1rem;
-         padding-left: 1rem;
-         padding-top: 1rem;
-         padding-bottom: 1rem;
      }
  
+}
+
+@media screen and (min-width:1200px)
+{   
+    .img-blog-detallado
+    {
+        
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .texto-blog-detallado
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* HOVERS */
+/* Animaciones a menues desktop*/
+.navigation-page
+{
+    a:hover
+    {
+        border-bottom: solid 1px whitesmoke;
+    }
+    
+}
+
+@media screen  and (min-width: 1400px){
+    
+    // Acomodo a columnas en 1440 para el container blog asi no se me junta todo
+    .container-blog
+    {
+        flex-direction: column;
+    }
+}
+
+/* KEYFRAMES */
+
+/* Transicion de baner contacto */
+@keyframes baner-contact {
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(25%);}
+    50%{transform: translateX(50%);}
+     
 }
