@@ -1,4 +1,6 @@
 # angapablanga
-Tecnologias utilizadas: HTML5, CSS
-Pagina de fotografo
-Estudiante de Coderhouse
+Index // Cambie el titulo a Anga Pablanga - Home
+Blog // Cambie el titulo a Anga Pablanga - Blog
+Portfolio // Cambie el titulo a Anga Pablanga - Portfolio
+Shop // Cambie el titulo a Anga Pablanga - Shop
+Contacto // Cambie el titulo a Anga Pablanga - Contacto
