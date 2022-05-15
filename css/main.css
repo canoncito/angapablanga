@@ -8,49 +8,62 @@
 .title-home {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase; }
+
+.title-home {
+  font-size: 80px;
   color: whitesmoke; }
 
 .title-blog {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase;
-  color: black; }
+  text-transform: uppercase; }
+
+.title-home {
+  font-size: 80px;
+  color: whitesmoke; }
 
 .title-portfolio {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase;
-  color: black;
-  font-size: 50px; }
+  text-transform: uppercase; }
+
+.title-home {
+  font-size: 80px;
+  color: whitesmoke; }
 
 .title-shop {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase;
-  color: black;
-  font-size: 50px; }
+  text-transform: uppercase; }
 
-.title-contact {
+.title-home {
+  font-size: 80px;
+  color: whitesmoke; }
+
+.title-contact, .title-home {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 10px;
   text-align: center;
-  text-transform: uppercase;
-  color: black; }
+  text-transform: uppercase; }
+
+.title-home {
+  font-size: 80px;
+  color: whitesmoke; }
 
 /* Modifico el navbar de boostrap */
 nav {
@@ -436,12 +449,10 @@ footer {
     list-style: none;
     margin-top: 10px;
     text-align: center; }
-  .nav-footer
-ul li a {
+  .nav-footer ul li a {
     text-decoration: none;
     color: whitesmoke; }
-  .nav-footer li a:hover
-ul li a:hover {
+  .nav-footer li a:hover ul li a:hover {
     text-decoration: underline; }
   /* Barra footer con copy */
   .bar-footer {

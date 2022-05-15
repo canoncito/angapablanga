@@ -5,25 +5,17 @@
     {
         font-family: 'Oswald',sans-serif;
         font-weight: 500;
-        font-size: 45px;
+        font-size: 50px;
         padding-top: 10px;
         text-align: center;
         text-transform: uppercase;
-        // Le doy color solo a mi home ya que mi h1 esta dentro de una imagen blanco y negro
-         @if ('.title-#{$titulo}'  == '.title-home')
-            {
-                color: whitesmoke;
-            }
-         @else
-            {
-                color: black;
-            }
-
-         @if (('.title-#{$titulo}'  == '.title-portfolio') or ('.title-#{$titulo}'  == '.title-shop' ))
-            {
-                font-size: 50px;
-            }      
-    }   
-   
+    }
+    // Realizo extend con el titulo home
+    .title-home
+        {
+            @extend .title-contact;
+            font-size: 80px;
+            color: whitesmoke;    
+        }     
 }
 
