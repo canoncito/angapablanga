@@ -72,7 +72,6 @@ nav {
   background-color: #234066; }
   nav div a img {
     position: relative;
-    width: 150px;
     margin-left: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -316,7 +315,6 @@ footer {
   /* Acomodo menu y logo a 600px */
   .logo {
     position: relative;
-    width: 200px;
     margin-left: 40px;
     padding-top: 5px;
     padding-bottom: 5px; }
@@ -370,7 +368,6 @@ footer {
   /*Acomodo imagen para tablet */
   .logo {
     position: relative;
-    width: 200px;
     margin-left: 40px;
     padding-top: 5px;
     padding-bottom: 5px; }
@@ -474,7 +471,6 @@ ul li a:hover {
   /* NUEVO MENU PARA PAGINAS SIN MOBILE */
   .logo {
     position: relative;
-    width: 230px;
     top: 0;
     margin-left: 40px;
     padding-top: 5px;
