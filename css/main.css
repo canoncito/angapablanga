@@ -53,7 +53,7 @@
   font-size: 80px;
   color: whitesmoke; }
 
-.title-contact, .title-home {
+.title-contact {
   font-family: 'Oswald',sans-serif;
   font-weight: 500;
   font-size: 50px;
@@ -264,6 +264,7 @@ footer {
     align-items: center; }
     footer div div a img {
       margin-top: 1rem;
+      margin-bottom: 2rem;
       width: 250px; }
     footer div div h3 {
       border-bottom: solid 1px white; }
@@ -449,10 +450,12 @@ footer {
     list-style: none;
     margin-top: 10px;
     text-align: center; }
-  .nav-footer ul li a {
+  .nav-footer
+ul li a {
     text-decoration: none;
     color: whitesmoke; }
-  .nav-footer li a:hover ul li a:hover {
+  .nav-footer li a:hover
+ul li a:hover {
     text-decoration: underline; }
   /* Barra footer con copy */
   .bar-footer {
