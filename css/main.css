@@ -178,11 +178,15 @@ nav {
     text-align: justify;
     word-spacing: -2px; }
 
+.d-block {
+  border-radius: 15px; }
+
 /*Aca arranco el shop*/
 .product-wrapper {
   display: grid;
-  grid-template: auto "dropdown dropdow" "container-product container-product";
-  justify-items: center; }
+  grid-template: auto "dropdown  container-product";
+  justify-items: center;
+  justify-content: center; }
 
 .dropdown {
   grid-area: dropdown; }
@@ -192,7 +196,7 @@ nav {
   margin-bottom: 10px;
   grid-area: container-product;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center; }
   .container-product .card-product {
@@ -200,7 +204,7 @@ nav {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 10px;
-    width: 100px;
+    width: 250px;
     border: solid 2px black;
     border-radius: 5px;
     display: flex;
@@ -221,12 +225,14 @@ nav {
   .description-product p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 20px;
     color: black; }
 
 .btn-comprar button {
   border-radius: 5px;
-  background-color: #37a69c; }
+  background-color: #37a69c;
+  height: 50px;
+  width: 100px; }
 
 /*Aca arranco contactos*/
 .bannerpagecontact-1024 {
@@ -308,8 +314,7 @@ footer {
   /* SHOP */
   /* Acomodo cards de productos */
   .container-product {
-    justify-content: flex-start;
-    margin-left: 80px; } }
+    justify-content: center; } }
 
 @media screen and (min-width: 600px) {
   /* Acomodo menu y logo a 600px */
@@ -354,8 +359,7 @@ footer {
   /* SHOP */
   /* Acomodo cards de productos */
   .container-product {
-    justify-content: flex-start;
-    margin-left: 55px; }
+    justify-content: center; }
   /* CONTACTO */
   /*Acomodo forumlario de consultas  */
   .form-control {
@@ -397,7 +401,9 @@ footer {
     .img-blog-detallado img {
       width: 350px; }
   .container-img div p {
-    width: 350px; }
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
   .container-portfolio {
     flex-direction: row; }
   /* Contacto */
@@ -423,7 +429,6 @@ footer {
   footer ul li {
     margin-bottom: 10px; }
   footer {
-    /* background-color: #010a1a; */
     color: whitesmoke;
     padding-top: 10px; }
   /* Acomodo de iconos de redes centrados */
@@ -460,6 +465,10 @@ footer {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
+
+@media screen and (min-width: 930px) {
+  .container-product {
+    margin-left: 30px; } }
 
 @media screen and (min-width: 992px) {
   .container-fluid div {
@@ -549,13 +558,14 @@ footer {
   .container-img {
     flex-direction: row;
     align-items: center;
+    width: 850px;
     margin-bottom: 20px; }
   /* SHOP */
   /* Modifico grid para poner filtros de busqueda de costado y el shop por la derecha */
   .product-wrapper {
-    grid-template: "dropdown container-product";
+    grid-template: "dropdown dropdown  container-product";
     justify-items: start;
-    justify-content: start; }
+    justify-content: center; }
   /* Creo grid de productos para 2 columnas */
   .container-product {
     display: grid;

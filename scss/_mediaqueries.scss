@@ -20,8 +20,7 @@
 /* Acomodo cards de productos */
     .container-product
     {
-        justify-content: flex-start;
-        margin-left: 80px;
+        justify-content: center;
     }
 }
 
@@ -103,8 +102,7 @@
 /* Acomodo cards de productos */
     .container-product
     {
-        justify-content: flex-start;
-        margin-left: 55px;
+        justify-content: center;
     }
     
   /* CONTACTO */
@@ -182,7 +180,10 @@
         {
             p
             {
-                width: 350px;
+                
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }
@@ -241,7 +242,7 @@
 
     footer
     {
-        /* background-color: #010a1a; */
+    
         color: whitesmoke;
         padding-top: 10px;  
     }
@@ -331,6 +332,14 @@
         padding-bottom: 1rem;
     }
 }
+@media screen and (min-width: 930px)
+{
+    .container-product
+    {
+        margin-left: 30px;
+    }
+}
+
 @media screen and (min-width: 992px)
 {
     .container-fluid
@@ -505,6 +514,7 @@
     {
        flex-direction: row;
        align-items: center;
+       width: 850px;
        margin-bottom: 20px;
     }
     /* SHOP */
@@ -513,10 +523,11 @@
     .product-wrapper
         {
             grid-template:
-        "dropdown container-product" 
+        "dropdown dropdown  container-product"
+       
         ;
         justify-items: start;
-        justify-content: start;
+        justify-content: center;
         }
     
       /* Creo grid de productos para 2 columnas */
