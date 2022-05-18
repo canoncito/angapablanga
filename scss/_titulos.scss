@@ -13,6 +13,7 @@
     // Realizo extend con el titulo home
     .title-home
         {
+            @extend .title-contact;
             font-size: 80px;
             color: whitesmoke;    
         } 
