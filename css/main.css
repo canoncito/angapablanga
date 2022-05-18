@@ -110,7 +110,7 @@ nav {
   padding-bottom: 20px; }
   .home-text p {
     font-family: 'Work Sans',sans-serif;
-    font-weight: 100;
+    font-weight: bold;
     font-size: 1rem;
     text-align: center; }
 
@@ -486,7 +486,8 @@ footer {
     margin-left: 60px;
     margin-right: 60px;
     color: whitesmoke;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: bold; }
   .row-home-text {
     flex-direction: column; }
   .table {
