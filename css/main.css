@@ -541,6 +541,7 @@ footer {
       width: 500px; }
   /* Acomodo imagen con el texto */
   .texto-blog-detallado p {
+    margin-top: 50px;
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px; }
@@ -549,6 +550,8 @@ footer {
     flex-direction: column; }
     .contenedor-blog div {
       width: 100%; }
+      .contenedor-blog div img {
+        width: 450px; }
   /* PORTFOLIO */
   .container-portfolio {
     align-items: center;
